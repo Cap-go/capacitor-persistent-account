@@ -1,3 +1,4 @@
 export interface CapacitorPersistentAccountPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  readAccount(): Promise<{ data: unknown | null }>;
+  saveAccount(options: { data: unknown }): Promise<void>;
 }

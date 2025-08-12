@@ -13,10 +13,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "7.0.0",
     "@capacitor/core": "latest",
-    "@capgo/capacitor-persistent-account": "file:..",
     "@capacitor/ios": "7.0.0",
-    "@capacitor/android": "7.0.0"
+    "@capgo/capacitor-persistent-account": "file:..",
+    "@trapezedev/project": "^7.1.3"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",

@@ -10,14 +10,26 @@ public class CapacitorPersistentAccountPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "CapacitorPersistentAccountPlugin"
     public let jsName = "CapacitorPersistentAccount"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "readAccount", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "saveAccount", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapacitorPersistentAccount()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func readAccount(_ call: CAPPluginCall) {
+        do {
+            let value = try implementation.readAccount()
+            call.resolve([ "data": value ?? NSNull() ])
+        } catch {
+            call.reject("Failed to read account: \(error.localizedDescription)")
+        }
+    }
+
+    @objc func saveAccount(_ call: CAPPluginCall) {
+        do {
+            try implementation.saveAccount(call.getObject("data")) // expects any JSON-serializable object
+            call.resolve()
+        } catch {
+            call.reject("Failed to save account: \(error.localizedDescription)")
+        }
     }
 }

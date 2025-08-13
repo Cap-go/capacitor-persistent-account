@@ -8,6 +8,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 public class Authenticator extends AbstractAccountAuthenticator {
+
     public Authenticator(Context context) {
         super(context);
     }
@@ -18,7 +19,13 @@ public class Authenticator extends AbstractAccountAuthenticator {
     }
 
     @Override
-    public Bundle addAccount(AccountAuthenticatorResponse response, String accountType, String authTokenType, String[] requiredFeatures, Bundle options) throws NetworkErrorException {
+    public Bundle addAccount(
+        AccountAuthenticatorResponse response,
+        String accountType,
+        String authTokenType,
+        String[] requiredFeatures,
+        Bundle options
+    ) throws NetworkErrorException {
         return null; // We don't provide an explicit add-account UI
     }
 
@@ -28,7 +35,8 @@ public class Authenticator extends AbstractAccountAuthenticator {
     }
 
     @Override
-    public Bundle getAuthToken(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) throws NetworkErrorException {
+    public Bundle getAuthToken(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options)
+        throws NetworkErrorException {
         throw new UnsupportedOperationException();
     }
 
@@ -38,7 +46,8 @@ public class Authenticator extends AbstractAccountAuthenticator {
     }
 
     @Override
-    public Bundle updateCredentials(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) throws NetworkErrorException {
+    public Bundle updateCredentials(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options)
+        throws NetworkErrorException {
         return null;
     }
 
@@ -49,5 +58,3 @@ public class Authenticator extends AbstractAccountAuthenticator {
         return result;
     }
 }
-
-

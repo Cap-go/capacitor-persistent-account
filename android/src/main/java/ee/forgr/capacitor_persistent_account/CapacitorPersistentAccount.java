@@ -3,11 +3,11 @@ package ee.forgr.capacitor_persistent_account;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.content.Context;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
 class CapacitorPersistentAccount {
+
     static final String ACCOUNT_TYPE = "ee.forgr.capacitor_persistent_account";
     static final String ACCOUNT_NAME = "CapacitorPersistentAccount";
     static final String USERDATA_JSON = "userdata_json";

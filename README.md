@@ -13,24 +13,34 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`readAccount()`](#readaccount)
+* [`saveAccount(...)`](#saveaccount)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### readAccount()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+readAccount() => Promise<{ data: unknown | null; }>
+```
+
+**Returns:** <code>Promise&lt;{ data: unknown; }&gt;</code>
+
+--------------------
+
+
+### saveAccount(...)
+
+```typescript
+saveAccount(options: { data: unknown; }) => Promise<void>
 ```
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+| **`options`** | <code>{ data: unknown; }</code> |
 
 --------------------
 

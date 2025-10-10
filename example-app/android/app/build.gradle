@@ -4,7 +4,7 @@ android {
     namespace "ee.forgr.capacitor_persistent_account.demoapp"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "ee.forgr.capacitor_persistent_account.demoapp"
+        applicationId "app.capgo.persistent.account"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

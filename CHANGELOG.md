@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.0.9](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.8...7.0.9) (2025-10-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.google.gms:google-services to v4.4.4 ([#3](https://github.com/Cap-go/capacitor-persistent-account/issues/3)) ([3a2742c](https://github.com/Cap-go/capacitor-persistent-account/commit/3a2742c8543bbe60a825a5b57e0be32435e1e162))
+
+## [7.0.8](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.7...7.0.8) (2025-10-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency androidx.appcompat:appcompat to v1.7.1 ([#2](https://github.com/Cap-go/capacitor-persistent-account/issues/2)) ([21dca3d](https://github.com/Cap-go/capacitor-persistent-account/commit/21dca3d2dd74be39f65ffb5a3a51494267c89da7))
+
+## [7.0.7](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.6...7.0.7) (2025-10-10)
+
 ## [7.0.6](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.5...7.0.6) (2025-10-08)
 
 ## [7.0.5](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.4...7.0.5) (2025-10-08)

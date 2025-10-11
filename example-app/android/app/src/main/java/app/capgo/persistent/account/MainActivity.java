@@ -1,4 +1,4 @@
-package ee.forgr.capacitor_persistent_account.demoapp;
+package app.capgo.persistent.account;
 
 import com.getcapacitor.BridgeActivity;
 

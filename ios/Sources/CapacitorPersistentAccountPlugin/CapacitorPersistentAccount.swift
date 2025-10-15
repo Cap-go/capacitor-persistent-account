@@ -19,7 +19,7 @@ import Security
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,
-            kSecAttrAccount as String: account,
+            kSecAttrAccount as String: account
         ]
         // Remove existing item if any
         SecItemDelete(query as CFDictionary)

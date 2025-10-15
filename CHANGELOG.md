@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.0.15](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.14...7.0.15) (2025-10-15)
+
+
+### Bug Fixes
+
+* lock and lint ([9df740c](https://github.com/Cap-go/capacitor-persistent-account/commit/9df740c509874fc0235b53fdadc3fd65865a4693))
+
 ## [7.0.14](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.13...7.0.14) (2025-10-15)
 
 

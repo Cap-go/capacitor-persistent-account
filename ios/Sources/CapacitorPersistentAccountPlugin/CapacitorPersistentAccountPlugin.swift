@@ -7,11 +7,13 @@ import Capacitor
  */
 @objc(CapacitorPersistentAccountPlugin)
 public class CapacitorPersistentAccountPlugin: CAPPlugin, CAPBridgedPlugin {
+    private let PLUGIN_VERSION: String = ""
     public let identifier = "CapacitorPersistentAccountPlugin"
     public let jsName = "CapacitorPersistentAccount"
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "readAccount", returnType: CAPPluginReturnPromise),
-        CAPPluginMethod(name: "saveAccount", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "saveAccount", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getPluginVersion", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapacitorPersistentAccount()
 
@@ -32,4 +34,9 @@ public class CapacitorPersistentAccountPlugin: CAPPlugin, CAPBridgedPlugin {
             call.reject("Failed to save account: \(error.localizedDescription)")
         }
     }
+
+    @objc func getPluginVersion(_ call: CAPPluginCall) {
+        call.resolve(["version": self.PLUGIN_VERSION])
+    }
+
 }

@@ -21,4 +21,8 @@ export class CapacitorPersistentAccountWeb extends WebPlugin implements Capacito
       // ignore
     }
   }
+
+  async getPluginVersion(): Promise<{ version: string }> {
+    return { version: 'web' };
+  }
 }

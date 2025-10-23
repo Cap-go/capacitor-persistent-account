@@ -11,6 +11,8 @@ import com.getcapacitor.annotation.PermissionCallback;
 @CapacitorPlugin(name = "CapacitorPersistentAccount")
 public class CapacitorPersistentAccountPlugin extends Plugin {
 
+    private final String PLUGIN_VERSION = "";
+
     private CapacitorPersistentAccount implementation;
 
     @Override
@@ -44,6 +46,17 @@ public class CapacitorPersistentAccountPlugin extends Plugin {
             call.resolve();
         } catch (Exception e) {
             call.reject("Failed to save account: " + e.getMessage());
+        }
+    }
+
+    @PluginMethod
+    public void getPluginVersion(final PluginCall call) {
+        try {
+            final JSObject ret = new JSObject();
+            ret.put("version", this.PLUGIN_VERSION);
+            call.resolve(ret);
+        } catch (final Exception e) {
+            call.reject("Could not get plugin version", e);
         }
     }
 }

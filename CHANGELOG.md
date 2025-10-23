@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.1.0](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.16...7.1.0) (2025-10-23)
+
+
+### Features
+
+* add plugin version retrieval methods for Android, iOS, and web ([eb95d27](https://github.com/Cap-go/capacitor-persistent-account/commit/eb95d27c05eddd42c4fe51edb6099bbabfcbb4c9))
+
+
+### Bug Fixes
+
+* remove unnecessary content field from Discord release notification ([1b833a6](https://github.com/Cap-go/capacitor-persistent-account/commit/1b833a63c8bd5fef98386aa94d12e21722671b72))
+
 ## [7.0.16](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.15...7.0.16) (2025-10-16)
 
 ## [7.0.15](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.14...7.0.15) (2025-10-15)

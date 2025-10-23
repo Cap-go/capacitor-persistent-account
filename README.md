@@ -15,6 +15,7 @@ npx cap sync
 
 * [`readAccount()`](#readaccount)
 * [`saveAccount(...)`](#saveaccount)
+* [`getPluginVersion()`](#getpluginversion)
 
 </docgen-index>
 
@@ -41,6 +42,19 @@ saveAccount(options: { data: unknown; }) => Promise<void>
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ data: unknown; }</code> |
+
+--------------------
+
+
+### getPluginVersion()
+
+```typescript
+getPluginVersion() => Promise<{ version: string; }>
+```
+
+Get the native Capacitor plugin version
+
+**Returns:** <code>Promise&lt;{ version: string; }&gt;</code>
 
 --------------------
 

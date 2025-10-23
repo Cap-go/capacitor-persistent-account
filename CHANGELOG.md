@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.1.1](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.0...7.1.1) (2025-10-23)
+
+
+### Bug Fixes
+
+* remove footer in discord ([79398f3](https://github.com/Cap-go/capacitor-persistent-account/commit/79398f3c9f2f7a1cdf0cf3a6e13d48c8a03df22a))
+* update Discord release notification username to include repository name ([fb294e2](https://github.com/Cap-go/capacitor-persistent-account/commit/fb294e22b4eee523a52d04912953d65cae747405))
+
 ## [7.1.0](https://github.com/Cap-go/capacitor-persistent-account/compare/7.0.16...7.1.0) (2025-10-23)
 
 

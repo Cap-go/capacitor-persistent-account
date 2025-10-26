@@ -2,6 +2,10 @@
 
 This plugin allows you to securely store account information for a user in Capacitor, and keep it between reinstall
 
+## Documentation
+
+The most complete doc is available here: https://capgo.app/docs/plugins/persistent-account/
+
 ## Install
 
 ```bash

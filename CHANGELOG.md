@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.1.3](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.2...7.1.3) (2025-10-26)
+
+
+### Bug Fixes
+
+* prevent bump for app ([0f05912](https://github.com/Cap-go/capacitor-persistent-account/commit/0f059125b2914f3fd80b1482be82e00245a39c86))
+
 ## [7.1.2](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.1...7.1.2) (2025-10-26)
 
 ## [7.1.1](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.0...7.1.1) (2025-10-23)

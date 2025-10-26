@@ -26,11 +26,22 @@ npx cap sync
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
+Capacitor Persistent Account Plugin
+
+Provides persistent storage for account data across app sessions using platform-specific
+secure storage mechanisms. On iOS, this uses the Keychain. On Android, this uses
+AccountManager. This ensures account data persists even after app reinstallation.
+
 ### readAccount()
 
 ```typescript
 readAccount() => Promise<{ data: unknown | null; }>
 ```
+
+Reads the stored account data from persistent storage.
+
+Retrieves account data that was previously saved using saveAccount(). The data
+persists across app sessions and survives app reinstallation on supported platforms.
 
 **Returns:** <code>Promise&lt;{ data: unknown; }&gt;</code>
 
@@ -43,9 +54,15 @@ readAccount() => Promise<{ data: unknown | null; }>
 saveAccount(options: { data: unknown; }) => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ data: unknown; }</code> |
+Saves account data to persistent storage.
+
+Stores the provided account data using platform-specific secure storage mechanisms.
+The data will persist across app sessions and survive app reinstallation.
+Any existing account data will be overwritten.
+
+| Param         | Type                            | Description                                       |
+| ------------- | ------------------------------- | ------------------------------------------------- |
+| **`options`** | <code>{ data: unknown; }</code> | - The options object containing the data to save. |
 
 --------------------
 
@@ -57,6 +74,9 @@ getPluginVersion() => Promise<{ version: string; }>
 ```
 
 Get the native Capacitor plugin version
+
+Returns the version string of the native plugin implementation. Useful for
+debugging and ensuring compatibility between the JavaScript and native layers.
 
 **Returns:** <code>Promise&lt;{ version: string; }&gt;</code>
 

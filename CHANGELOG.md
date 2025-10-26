@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.2.0](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.3...7.2.0) (2025-10-26)
+
+
+### Features
+
+* enhance documentation for CapacitorPersistentAccountPlugin methods ([49f7ee4](https://github.com/Cap-go/capacitor-persistent-account/commit/49f7ee4d72d3fe3d2e4c17b7e8a6b354613e49ab))
+
 ## [7.1.3](https://github.com/Cap-go/capacitor-persistent-account/compare/7.1.2...7.1.3) (2025-10-26)
 
 

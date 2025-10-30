@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [7.2.4](https://github.com/Cap-go/capacitor-persistent-account/compare/7.2.3...7.2.4) (2025-10-30)
+
+
+### Bug Fixes
+
+* CI/CD config ([df368fd](https://github.com/Cap-go/capacitor-persistent-account/commit/df368fd1de8cfa28dfd393b344580d2bc3e47f2e))
+* model github action ([620b798](https://github.com/Cap-go/capacitor-persistent-account/commit/620b79885b130a857ea3a279e91bacc858fea6d9))
+* pluginVersion lint issue ([bd5fc63](https://github.com/Cap-go/capacitor-persistent-account/commit/bd5fc63baa3ca77d25a7d538a23fc4de0f458f9e))
+* update github action ([3cd78a3](https://github.com/Cap-go/capacitor-persistent-account/commit/3cd78a3be2c7ae6fc5a640efe890fd7f28aca93c))
+
 ## [7.2.3](https://github.com/Cap-go/capacitor-persistent-account/compare/7.2.2...7.2.3) (2025-10-27)
 
 

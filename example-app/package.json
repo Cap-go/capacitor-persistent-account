@@ -13,9 +13,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/android": "7.0.0",
+    "@capacitor/android": "7.4.4",
     "@capacitor/core": "latest",
-    "@capacitor/ios": "7.0.0",
+    "@capacitor/ios": "7.4.4",
     "@capgo/capacitor-persistent-account": "file:..",
     "@trapezedev/project": "^7.1.3"
   },

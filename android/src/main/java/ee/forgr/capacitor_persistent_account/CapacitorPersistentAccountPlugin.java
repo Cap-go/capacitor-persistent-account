@@ -11,7 +11,7 @@ import com.getcapacitor.annotation.PermissionCallback;
 @CapacitorPlugin(name = "CapacitorPersistentAccount")
 public class CapacitorPersistentAccountPlugin extends Plugin {
 
-    private final String pluginVersion = "7.2.10";
+    private final String pluginVersion = "8.0.1";
 
     private CapacitorPersistentAccount implementation;
 

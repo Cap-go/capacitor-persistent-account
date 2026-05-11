@@ -1,5 +1,7 @@
 # @capgo/capacitor-persistent-account
 
+<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-persistent-account" alt="Capgo - Instant updates for Capacitor" /></a>
+
 This plugin allows you to securely store account information for a user in Capacitor, and keep it between reinstall
 
 ## Documentation

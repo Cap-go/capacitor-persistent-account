@@ -1,3 +1,5 @@
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { Capacitor } from '@capacitor/core';
 import { CapacitorPersistentAccount } from '@capgo/capacitor-persistent-account';
 
 function updateDisplay(name) {
@@ -28,3 +30,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateDisplay('alice');
   }
 });
+
+if (Capacitor.isNativePlatform()) {
+  CapacitorUpdater.notifyAppReady().catch((error) => {
+    console.error('Capgo notifyAppReady failed', error);
+  });
+}

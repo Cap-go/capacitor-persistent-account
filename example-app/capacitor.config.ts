@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.persistent.account',
-  appName: 'Persistent Account Example',
+  appName: '@capgo/capacitor-persistent-account',
   webDir: 'dist',
   plugins: {
     SplashScreen: {

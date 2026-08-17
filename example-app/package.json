@@ -16,10 +16,11 @@
     "@capacitor/android": "^8.0.0",
     "@capacitor/core": "^8.0.0",
     "@capacitor/ios": "^8.0.0",
+    "@capacitor/splash-screen": "^8.0.0",
     "@capgo/capacitor-persistent-account": "file:..",
-    "@trapezedev/project": "^7.1.3",
     "@capgo/capacitor-updater": "^8.45.11",
-    "@capacitor/splash-screen": "^8.0.0"
+    "@trapezedev/project": "^7.1.3",
+    "brace-expansion": "1.1.18"
   },
   "devDependencies": {
     "@capacitor/cli": "^8.0.0",

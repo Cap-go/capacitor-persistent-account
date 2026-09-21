@@ -9,7 +9,7 @@ export class CapacitorPersistentAccountWeb extends WebPlugin implements Capacito
     try {
       const raw = localStorage.getItem(WEB_STORAGE_KEY);
       return { data: raw ? JSON.parse(raw) : null };
-    } catch (err) {
+    } catch {
       return { data: null };
     }
   }
@@ -17,7 +17,7 @@ export class CapacitorPersistentAccountWeb extends WebPlugin implements Capacito
   async saveAccount(data: unknown): Promise<void> {
     try {
       localStorage.setItem(WEB_STORAGE_KEY, JSON.stringify(data ?? null));
-    } catch (err) {
+    } catch {
       // ignore
     }
   }

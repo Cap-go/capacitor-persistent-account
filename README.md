@@ -1,6 +1,6 @@
 # @capgo/capacitor-persistent-account
 
-Keep a user's account data on the device even after they delete and reinstall your Capacitor app, so they come back signed in.
+Store a user's account data in native storage from your Capacitor app, so it can still be there after a delete and reinstall. The iOS Keychain keeps it, while on Android retention after uninstall depends on the system.
 
 <a href="https://capgo.app/?ref=plugin_persistent_account"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-persistent-account" alt="Capgo - Instant updates for Capacitor" /></a>
 
@@ -18,7 +18,7 @@ Keep a user's account data on the device even after they delete and reinstall yo
 ## Key features
 
 - **Save**: `saveAccount()` stores any serializable account data.
-- **Read**: `readAccount()` returns it, including after a reinstall.
+- **Read**: `readAccount()` returns it, including after a reinstall when the platform kept the data.
 - **iOS**: stored in the Keychain.
 - **Android**: stored with `AccountManager`.
 - **Platforms**: iOS, Android and Web. Web uses `localStorage`, which does not survive clearing site data.

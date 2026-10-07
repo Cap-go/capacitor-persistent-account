@@ -1,8 +1,27 @@
 # @capgo/capacitor-persistent-account
 
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-persistent-account" alt="Capgo - Instant updates for Capacitor" /></a>
+Store a user's account data in native storage from your Capacitor app, so it can still be there after a delete and reinstall. The iOS Keychain keeps it, while on Android retention after uninstall depends on the system.
 
-This plugin allows you to securely store account information for a user in Capacitor, and keep it between reinstall
+<a href="https://capgo.app/?ref=plugin_persistent_account"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-persistent-account" alt="Capgo - Instant updates for Capacitor" /></a>
+
+<div align="center">
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_persistent_account">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_persistent_account">Missing a feature? We'll build the plugin for you 💪</a></p>
+</div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-persistent-account/main/assets/github-social-preview.png" alt="@capgo/capacitor-persistent-account for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Save**: `saveAccount()` stores any serializable account data.
+- **Read**: `readAccount()` returns it, including after a reinstall when the platform kept the data.
+- **iOS**: stored in the Keychain.
+- **Android**: stored with `AccountManager`.
+- **Platforms**: iOS, Android and Web. Web uses `localStorage`, which does not survive clearing site data.
 
 ## Documentation
 

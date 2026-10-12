@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-persistent-account",
-  "version": "8.0.45",
+  "version": "8.0.46",
   "description": "This plugin allows you to securely store account information for a user in Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
